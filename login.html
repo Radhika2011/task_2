@@ -1,0 +1,98 @@
+<html>
+<head><title>Log in</title></head>
+<body>
+<div style="width:20%;">
+<fieldset>
+<legend style="color:blue;font-weight:bold;"> Log in </legend>
+<table width="100%" align="center" style="background-color:lightgreen;">
+<form name="login" id="login" action="login.php" method="post">
+
+<tr>
+<td style="width:40%;" align="right"> Username </td>
+<td style="width:40%;">
+<input type="text" name="txtusername" size="25" maxlength="15" tabindex="1"/> </td>
+</tr>
+
+
+<tr>
+<td style="width:40%;" align="right"> Password </td>
+<td style="width:40%;">
+<input type="password" name="pwdpassword" size="25" maxlength="15" tabindex="4"/> </td>
+</tr>
+
+<tr>
+<td style="width:40%;" align="right">
+<input type="button" value="Log in" name="btnsubmit" size="25" maxlength="15" tabindex="4"/> </td>
+</tr>
+</form>
+</table>
+</fieldset>
+</div>
+<br><br><br>
+<div style="width :30%;">
+<fieldset>
+<legend style="color:blue;font-weight:bold">Sign Up </legend>
+<table width = "100%" align="center" cellpadding="1" cellspacing="1" style="background-color:lightgreen;">
+<form name ="frmClientMaster" id="frmClientMaster" action="clientMaster.php" method="post">
+<tr>
+<td style="width:40%;" align="right">First Name:</td>
+<td style="width:40%;">
+<input type="Text" Name="txtFirstName" size="25" maxlength="15" tabindex="1"
+</td>
+</tr>
+
+<tr>
+<td style="width:40%;" align="right">Last name:</td>
+<td style="width:40%;">
+<input type="Text" Name="txtLastName" size="25" maxlength="15" tabindex="1"
+</td>
+</tr>
+
+<tr>
+<td style="width:40%;" align="right"> Address: </td>
+<td style="width:40%;">
+<textarea name="taAddress" row="3" cols="18" tabindex="3">
+</textarea>
+</td>
+</tr>
+
+<tr>
+<td style="width:40%;" align="right">email Id(will be used as username):</td>
+<td style="width:40%;">
+<input type="Text" Name="txtemailid" size="25" maxlength="15" tabindex="1"
+</td>
+</tr>
+
+<tr>
+<td style="width:40%;" align="right">Choose Password:</td>
+<td style="width:40%;">
+<input type="password" name="pwdPassword" size="25" maxlength="15" tabindex="4" >
+</td>
+</tr>
+
+<tr>
+<form enctype="multipart/form-data" action="upload.php" method="POST"> Choose Image to upload:
+<input type="File" name="fileforupload"></input>
+<input type="submit" value="Upload file"></input>
+</form>
+</tr>
+
+<tr>
+<td style="width:40%;" align="right">
+<input type="submit" name="btnSubmit" value="Submit" tabindex="9"/>
+</td>
+<td style="width:40%;" align="right">
+<input type="reset" name="btnCancel" value="Cancel" tabindex="10"/>
+</td>
+</tr>
+
+<td style="width:40%;" align="right" colspan="2">
+<input type ="hidden" name="frmClientInfo" value="Client Master Details"/>
+</td>
+</tr>
+</form>
+</table>
+</fieldset>
+</div>
+</body>
+</html>
